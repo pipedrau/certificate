@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificado de Sueños</title>
+  <!-- Importa una fuente serif desde Google Fonts, por ejemplo, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Vista del formulario -->
+  <div id="form-container">
+    <form id="dreamForm">
+      <label for="nombre">¿Cómo te llaman?</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="genero">Género</label>
+      <select id="genero" name="genero">
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+        <option value="Angel">Angel</option>
+      </select>
+
+      <label for="sueno">¿Cuál es tu sueño?</label>
+      <textarea id="sueno" name="sueno" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Vista del certificado (oculta inicialmente) -->
+  <div id="certificate-container" style="display:none;">
+    <div id="certificate">
+      <h1>Certificado de Sueño</h1>
+      <p>Nombre: <span id="cert-nombre"></span></p>
+      <p>Género: <span id="cert-genero"></span></p>
+      <p>Sueño: <span id="cert-sueno"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

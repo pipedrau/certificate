@@ -1,0 +1,48 @@
+/* Establece el fondo de la web en salmon pastel y la tipografía en un azul profundo */
+body {
+    background-color: #ff7559; /* color pastel salmon */
+    font-family: 'Playfair Display', serif;
+    color: #00008B; /* azul profundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Contenedor general para centrar el contenido y aplicar bordes azules */
+  #form-container, #certificate-container {
+    border: 1px solid #00008B; /* borde azul */
+    padding: 20px;
+    background: white; /* fondo blanco para destacar los inputs */
+    border-radius: 10px;
+    
+  }
+  
+  /* Estilos para el formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input, form select, form textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #00008B; /* bordes de inputs en azul */
+    border-radius: 5px;
+    background: white; /* inputs en blanco */
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #00008B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
