@@ -12,10 +12,10 @@ body {
   
   /* Contenedor general para centrar el contenido y aplicar bordes azules */
   #form-container, #certificate-container {
-    border: 1px solid #00008B; /* borde azul */
+    border: 5px solid #00008B; /* borde azul */
     padding: 20px;
     background: white; /* fondo blanco para destacar los inputs */
-    border-radius: 10px;
+    border-radius: 20px;
     
   }
   
